@@ -1,24 +1,26 @@
-Name,Type,Purpose,Description,Manufacturer,Distributor,Distributor No,Link,Qty,Unit Cost,Cost,Comms,Electrical Conn,Mechanical Conn,Datasheet,Other Links,Notes,Pins,Pin qty
+Name,Type,Purpose,Description,Manufacturer,Distributor,Distributor No,Link,Qty,Unit Cost,Cost,Comms,Electrical Conn,Mechanical Conn,Datasheet,Other Links,Notes,Pins,Pin qty,
 Pixy2 CMUcam5,Camera,Visual tracking,Smal board with IC's and camera. Supports collor components and line tracking.,SparkFun,DigiKey,SEN-14678-ND,"SEN-14678 SparkFun Electronics | Maker/DIY, Educational | DigiKey",1,79.44,79.44,USB* > SPI > I2C > UART,"ISP, USB",Two mounting holes,https://www.digikey.com/en/htmldatasheets/production/3271222/0/0/1/sen-14678.html?site=US&lang=en&cur=USD,wiki:v2:porting_guide [Documentation] (pixycam.com),"Use PixyMon to configure cam for different comm types. 
 *USB using their libraries is preferred, but uses a larger memory footprint.","PB10 - serial CLK 
 PB14 - MISO 
-PB15 - MOSI",3
-Pixy2 Mounting Package,Mounting Kit,Mount Pixy2 and allow pan/yaw,"Two servos, mounting hardware",Seeed Technology,DigiKey,1597-1692-ND,"110991167 Seeed Technology Co., Ltd | Maker/DIY, Educational | DigiKey",1,29.25,,NA,NA (wire to Pixy2),Four mounting holes,https://www.digikey.com/en/htmldatasheets/production/3484105/0/0/1/110991167.html?site=US&lang=en&cur=USD ,wiki:v2:assembling_pantilt_mechanism [Documentation] (pixycam.com),Servos powered and controlled by Pixy2 camera,NA,0
-DRV5032FBDBZR,Hall Effect Sensor,Detect magnet on floor,"1 SMT, 3 pin. Omnipol switch",Texas Instruments,DigiKey,296-47323,"DRV5032FBDBZR Texas Instruments | Sensors, Transducers | DigiKey",1,0.69,,Push-Pull,"Vcc > 1.65V, GPIO",SMT,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fdrv5032,,Selection guide shows more off/on magnetic thresholds. Can get another part in the TO-92 package size (TO-236 on digikey),1xGPIO: (select during routing),1
-SEN0373,IMU,Position backup to encoders,breakout board with header pin connections,DFRobot,DigiKey,1738-SEN0373-ND,"SEN0373 DFRobot | Sensors, Transducers | DigiKey",1,13.9,,I2C,"Header pins, 3.3V, I2C",Mounting Hole,-,BMX160 9-axis Absolute Orientation Sensor Module Wiki - DFRobot,Cheapest 9-axis on digikey. Do we need one though?,"I2C1: PB8, PB9",2
-QTR-8RC,IR Line Sensor,Track lines under robot,IR sensor array,Pololu,DigiKey,2183-961-ND,"961 Pololu Corporation | Development Boards, Kits, Programmers | DigiKey Marketplace",1,9.95,,8x Push-Pull,"Header pins, 3.3V - 5V",Mounting Hole,Pololu - QTR-8A and QTR-8RC Reflectance Sensor Array User’s Guide,Pololu - QTR-8RC Reflectance Sensor Array,"Could just wire connections to the detectors we're interested in, don't need to use all 8.",8xGPIO: (select during routing),8
-,,Ball color sensor,,,,,,,,,I2C,Vcc = 3.3V,SMT,,,,"I2C1: PB8, PB9",2
+PB15 - MOSI",3,
+Pixy2 Mounting Package,Mounting Kit,Mount Pixy2 and allow pan/yaw,"Two servos, mounting hardware",Seeed Technology,DigiKey,1597-1692-ND,"110991167 Seeed Technology Co., Ltd | Maker/DIY, Educational | DigiKey",1,29.25,,NA,NA (wire to Pixy2),Four mounting holes,https://www.digikey.com/en/htmldatasheets/production/3484105/0/0/1/110991167.html?site=US&lang=en&cur=USD ,wiki:v2:assembling_pantilt_mechanism [Documentation] (pixycam.com),Servos powered and controlled by Pixy2 camera,NA,0,
+DRV5032FBDBZR,Hall Effect Sensor,Detect magnet on floor,"1 SMT, 3 pin. Omnipol switch",Texas Instruments,DigiKey,296-47323,"DRV5032FBDBZR Texas Instruments | Sensors, Transducers | DigiKey",1,0.69,,Push-Pull,"Vcc > 1.65V, GPIO",SMT,https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fdrv5032,,Selection guide shows more off/on magnetic thresholds. Can get another part in the TO-92 package size (TO-236 on digikey),1xGPIO: (select during routing),1,
+SEN0373,IMU,Position backup to encoders,breakout board with header pin connections,DFRobot,DigiKey,1738-SEN0373-ND,"SEN0373 DFRobot | Sensors, Transducers | DigiKey",1,13.9,,I2C,"Header pins, 3.3V, I2C",Mounting Hole,-,BMX160 9-axis Absolute Orientation Sensor Module Wiki - DFRobot,Cheapest 9-axis on digikey. Do we need one though?,"I2C1: PB8, PB9",2,
+QTR-8RC,IR Line Sensor,Track lines under robot,IR sensor array,Pololu,DigiKey,2183-961-ND,"961 Pololu Corporation | Development Boards, Kits, Programmers | DigiKey Marketplace",1,9.95,,8x Push-Pull,"Header pins, 3.3V - 5V",Mounting Hole,Pololu - QTR-8A and QTR-8RC Reflectance Sensor Array User’s Guide,Pololu - QTR-8RC Reflectance Sensor Array,"Could just wire connections to the detectors we're interested in, don't need to use all 8.",8xGPIO: (select during routing),8,
+,,Ball color sensor,,,,,,,,,I2C,Vcc = 3.3V,SMT,,,,"I2C1: PB8, PB9",2,
 ,,Drive the drive motors,Motor Driver,,,,,3,,,,,,,,,"1: PA0, PA1
 2: PA6, PA7
-3: PB6, PB7",3
+3: PB6, PB7",3,
 ,,Turn drive wheels,Motor?,,,,,,,,,,,,,,"ENC1: PA2, PA3
-ENC2: PB0, PB1",4
-,,Turn conveyor,Motor?,,,,,,,,,,,,,,NA,0
-,,,Servo Motor,,,,,,,,,,,,,,"PA8, PA11",2
-,,,Limit Switch,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-Color Sensor,1,$2.77 ,Digikey,https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML3328/10673129 ,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,25
+ENC2: PB0, PB1",4,
+,,Turn conveyor,Motor?,,,,,,,,,,,,,,NA,0,
+,,,Servo Motor,,,,,,,,,,,,,,"PA8, PA11",2,
+,,,Limit Switch,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Color Sensor,1,$2.77 ,Digikey,https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML3328/10673129 ,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,25,
+,,,,,,,,,,,,,,,,,,,
+Alternate Line Sensor,IR Line Sensor,Track line,IR sensor,Sparkfun,Digikey,ROB-09453,https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-09453/5762422,3,3.5,,1xADC pin each,,,https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/ROB-09453_Web.pdf,,,,,
