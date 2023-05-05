@@ -1,0 +1,8 @@
+Replace bump switch connectors with dedicated ports
+
+Verify trace sizes for power connections
+
+Add Fuse to input
+
+Diodes to isolate input sources
+
