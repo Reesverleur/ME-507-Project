@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2023-05-19T23:19:41Z",
+        "GenerationSoftware": {
+            "Application": "Fusion 360 Electronics",
+            "Vendor": "Autodesk",
+            "Version": "9.7.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.640844,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "Electronics Schematic v111"
+        },
+        "Owner": "Rees Verleur <rverleur@purdue.edu>",
+        "Size": {
+            "X": 68.199,
+            "Y": 78.105
+        }
+    }
+}
