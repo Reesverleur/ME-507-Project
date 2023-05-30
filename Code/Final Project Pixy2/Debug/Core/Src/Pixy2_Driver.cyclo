@@ -1,0 +1,6 @@
+Pixy2_Driver.cpp:9:2:Pixy2::Pixy2(SPI_HandleTypeDef*, GPIO_TypeDef*, uint16_t)	1
+Pixy2_Driver.cpp:16:7:void Pixy2::getBlock(uint8_t, uint8_t)	5
+Pixy2_Driver.cpp:35:7:void Pixy2::setCoords()	5
+Pixy2_Driver.cpp:51:7:void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef*)	2
+Pixy2_Driver.cpp:56:7:void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef*)	2
+stl_numeric.h:134:5:_Tp std::accumulate(_InputIterator, _InputIterator, _Tp) [with _InputIterator = unsigned char*; _Tp = int]	2
