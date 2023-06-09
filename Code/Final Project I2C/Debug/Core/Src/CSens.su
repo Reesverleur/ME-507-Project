@@ -1,0 +1,4 @@
+../Core/Src/CSens.cpp:13:1:CSens::CSens(I2C_HandleTypeDef*)	32	static
+../Core/Src/CSens.cpp:19:6:void CSens::getCdata()	24	static
+../Core/Src/CSens.cpp:28:6:void HAL_I2C_MemRxCpltCallback(I2C_HandleTypeDef*)	16	static
+../Core/Src/CSens.cpp:36:6:void HAL_I2C_MemTxCpltCallback(I2C_HandleTypeDef*)	16	static

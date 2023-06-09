@@ -1,0 +1,12 @@
+main.cpp:82:5:int main()	2
+main.cpp:149:6:void SystemClock_Config()	3
+main.cpp:195:13:void MX_I2C2_Init()	2
+main.cpp:229:13:void MX_TIM1_Init()	4
+main.cpp:276:13:void MX_TIM2_Init()	4
+main.cpp:321:13:void MX_TIM3_Init()	3
+main.cpp:370:13:void MX_TIM5_Init()	5
+main.cpp:423:13:void MX_USART1_UART_Init()	2
+main.cpp:456:13:void MX_GPIO_Init()	1
+main.cpp:490:6:void Error_Handler()	1
+main.cpp:499:1:void __static_initialization_and_destruction_0(int, int)	3
+main.cpp:499:1:cpp)	1
