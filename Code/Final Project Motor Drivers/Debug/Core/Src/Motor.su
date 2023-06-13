@@ -1,0 +1,6 @@
+../Core/Src/Motor.cpp:9:2:Motor::Motor(TIM_HandleTypeDef*, TIM_HandleTypeDef*, int32_t, int32_t)	24	static
+../Core/Src/Motor.cpp:26:7:void Motor::Enable(int32_t)	16	static
+../Core/Src/Motor.cpp:30:7:void Motor::duty(int32_t)	16	static
+../Core/Src/Motor.cpp:40:7:void Motor::Control(int32_t)	16	static
+../Core/Src/Motor.cpp:63:7:void Motor::setGains(float, float, float)	24	static
+../Core/Src/Motor.cpp:68:7:void Motor::zeroErrors()	16	static

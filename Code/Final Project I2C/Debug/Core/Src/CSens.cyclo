@@ -1,0 +1,4 @@
+CSens.cpp:13:1:CSens::CSens(I2C_HandleTypeDef*)	1
+CSens.cpp:19:6:void CSens::getCdata()	1
+CSens.cpp:28:6:void HAL_I2C_MemRxCpltCallback(I2C_HandleTypeDef*)	2
+CSens.cpp:36:6:void HAL_I2C_MemTxCpltCallback(I2C_HandleTypeDef*)	2
