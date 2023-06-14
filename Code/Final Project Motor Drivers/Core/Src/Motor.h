@@ -67,7 +67,7 @@ class Motor
 	void Control(int32_t newSet);
 	void setGains(float nKp,float nKi, float nKd);
 	void zeroErrors();
-	void Motor::VariableControl(int32_t newSet, float nKp, float nKi, int32_t intError);
+	void VariableControl(int32_t newSet, float nKp, float nKi, int32_t intError);
 };
 
 
