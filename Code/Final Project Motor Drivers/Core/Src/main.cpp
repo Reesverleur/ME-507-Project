@@ -116,7 +116,7 @@ int main(void)
 
 
   motor1.Enable(1);
-  motor1.setGains(2,0,0);
+  motor1.setGains(3,0,1);
   //motor1.duty(50);
   /* USER CODE END 2 */
 
@@ -125,7 +125,7 @@ int main(void)
   while (1)
   {
 	  HAL_Delay(10);
-	  motor1.Control(6747);
+	  motor1.VariableControl(6747/3,8,0.2,25);
 
 	  int32_t len = sprintf(msg_buff, "Motor Position is: %i Motor Effort is: %i Motor Error is: %i\r\n",motor1.Pos,motor1.Duty,motor1.error);
 	  // print string to uart

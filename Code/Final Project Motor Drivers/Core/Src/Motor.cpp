@@ -199,7 +199,7 @@
 	void Motor::VariableControl(int32_t newSet, float nKp, float nKi, int32_t intError){
 		Kp = nKp;
 		Ki = nKi;
-		Kd = 0;
+		//Kd = 0;
 		setpoint= newSet;
 		ticks = __HAL_TIM_GET_COUNTER(entim)-oldticks;
 		if (ticks>32768){
